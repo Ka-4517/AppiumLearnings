@@ -1,0 +1,8 @@
+Appium Framework Design: Setup with Maven & Folder Structure 
+1. Install Intellije - community edition
+2. OPEN CREATE NEW PROJECT 
+3. architype=quickstart
+4. default structure 
+src & test & pom.xml
+5. appium & testng library first we need to add in pom.xml dependencies
+6. 
