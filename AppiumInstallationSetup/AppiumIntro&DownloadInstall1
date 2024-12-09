@@ -1,0 +1,129 @@
+What is Appium Server?
+Appium Server is the core component of the Appium mobile app testing framework. 
+It acts as an intermediary between your test code and the mobile devices or emulators you’re testing on.
+
+Types of OS In mobile?
+1. Android 
+2. IOS 
+3. Blackberry 
+4. Windows
+
+Types of Mobile App?
+1. Mobile web App 
+2. Native Apps
+2. Hybrid Apps
+
+Automation Tools Available?
+1. Appium 
+2. Selenoid
+2. IOS Driver (class inherit from AppiumDriver)
+
+### Open Source Tools Requirements
+
+#### Requirements:
+1. **Application source code should not be modified for test automation:**
+   - The application being tested should not require compiling or modification of the source code.
+   - Explanation: Many open-source mobile automation testing tools (e.g., Robotium) require source code modification, which isn't suitable as the same application is to be submitted to the Play Store.
+   
+2. **Tests should run across simulators/emulators and real devices:**
+   - The tool must support simulators (e.g., virtual devices for iOS), emulators (virtual devices for Android), and real devices.
+
+3. **Tests should be written using Java and any test automation frameworks:**
+   - The tool should support tests written in Java to ensure compatibility with any test framework.
+
+4. **Large open-source community:**
+   - The tool must have a large community for continuous maintenance and support.
+
+---
+
+### Tools That Fulfill Open-Source Requirements:
+
+| Requirements | Appium | iOS Driver | Calabash |
+|--------------|--------|------------|----------|
+| 1            | Yes    | Yes        | No       |
+| 2            | Yes    | No         | Yes      |
+| 3            | Yes    | Yes        | No       |
+| 4            | Yes    | Yes        | No       |
+
+---
+
+Why Appium (Advantages)
+Cross-platform:
+
+Supports Android and iOS, allowing testing of native, hybrid, and web applications.
+Communication with other apps:
+
+Enables interaction with other applications, e.g., WhatsApp (a feature not supported by many tools).
+No pre-compilation required:
+
+Applications do not need to be pre-compiled for testing.
+Support for built-in apps:
+
+Works with built-in apps such as alarm, phone, calendar, etc.
+WebDriver-compatible languages:
+
+Supports multiple programming languages, including:
+Java
+Objective-C
+Ruby
+PHP
+C#
+Only requires language-specific libraries for implementation.
+-----------
+Limitations of Appium
+Android API Level Restriction:
+
+No support for Android API levels < 17 (for Android versions < 4.1).
+If the mobile device uses an API level below 17, Selendroid is required.
+Slow Script Execution:
+
+Execution is very slow on:
+iOS platforms.
+Android virtual devices.
+No Support for Toast Messages:
+
+Appium does not natively support handling toast messages but can manage them through alternative methods.
+No Direct Parallel Execution:
+
+Parallel execution is not directly supported.
+Can be handled using Sauce Labs or similar tools.
+-----------------
+Appium Architecture :-----
+--------------------------
+--------------------------
+    class Client {
+        - Test Scripts
+        - Desired Capabilities
+    }
+
+    class AppiumServer {
+        - HTTP Server
+        - Session Management
+        - Platform-Specific Drivers
+    }
+
+    class MobileDevice {
+        - Real Devices
+        - Emulators/Simulators
+    }
+
+    Client "sends request" --> AppiumServer
+    AppiumServer "creates session" --> AppiumServer
+    AppiumServer "forwards commands" --> Platform-Specific Drivers
+    Platform-Specific Drivers "executes commands" --> MobileDevice
+    MobileDevice "performs actions" --> Platform-Specific Drivers
+    Platform-Specific Drivers "sends response" --> AppiumServer
+    AppiumServer "sends response" --> Client
+
+
+------------------------------------------------------------------------------------
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
