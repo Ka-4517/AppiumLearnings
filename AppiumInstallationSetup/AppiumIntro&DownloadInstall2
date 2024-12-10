@@ -15,6 +15,28 @@ Android Studio
 Appium Server/Appium Desktop
 Appium Client Library1   
 
+*SET JAVA FIRST
+1. Download JDK JAVA - .exe File 
+2. Install & Check-In Program Files (Copy The Location)
+3. Go To Advanced System Setting 'This PC'
+4. Select Environment Variable -> System Variable -> Set Path 'JAVA_HOME'
+5. Download Android STUDIO -> Official Page 
+6. Install & Copy The SDK Path (C:\Users\Karan\AppData\Local\Android\Sdk)
+
+*OPEN ANDROID STUDIO & CONFIGURE EMULATOR
+1. Install & start the Appium server via Node.js 
+-Download Node - Official website for Windows 
+-Install & Finish 
+-It will automatically install some other Tools For Node using Powershell 
+
+*SET (ANDROID SDK & NODE) HOME PATH IN WINDOWS SYSTEM VARIABLES
+-Check where is SDK Installed
+-Copy the Path (C:\Users\Karan\AppData\Local\Android\Sdk)
+-Open Environments Variables -> System Variables -> Paste AS 'ANDROID_HOME'
+
+
+
+
 
 
 
