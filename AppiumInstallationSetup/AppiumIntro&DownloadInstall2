@@ -34,6 +34,38 @@ Appium Client Library1  
 -Copy the Path (C:\Users\Karan\AppData\Local\Android\Sdk)
 -Open Environments Variables -> System Variables -> Paste AS 'ANDROID_HOME'
 
+**Start Android Studio  (C:\Program Files\Android\Android Studio\bin -> click to Studio64)
+**Click To new project tab To Move to Home page -> To make some setting 
+**Wait untill build got finished
+**Now Go To 'Tools'
+**Select SDK MANAGER -> SDK TOOLS 
+**Uncheck 'Hide absolute packages'
+**Now you will see in list 'Android SDK Tools(absolute)'
+**Check that -> Ok & Apply 
+** Accept & wait till Done 
+** Now you will see tools folder (C:\Users\Karan\AppData\Local\Android\Sdk)<-- In This Location
+** Now Copy this Location Under tools (C:\Users\Karan\AppData\Local\Android\Sdk\tools\bin)
+*** Add this under Environment Variable -> New -> PATH -> Paste this -> C:\Users\Karan\AppData\Local\Android\Sdk\tools\bin
+
+**Go to Program Files 
+**copy node location : C:\Program Files\nodejs
+**Create New variable under System Variables & Paste the location 'NODE_HOME'
+**Copy NPM location : C:\Program Files\nodejs\node_modules\npm\bin
+**Go to PATH -> Add this : C:\Program Files\nodejs\node_modules\npm\bin
+
+-------------------------------------------------------------------------------
+Start Android Studio & Install Appium Server & Configure Virtual & Real Devices/ Emulators
+1. open Android sdk 
+2. tools -> Device Manager
+3. Create Virtual Device -> Select The Phone & Version "Created"
+4. Virtual Device Runned By clicking PLAY ICON 
+
+1. Open Terminal 
+2. Run this command : npm install appium
+3. AFTER THAT : npm install -g appium (Open terminal as a administrator mode) then run this 
+
+
+
 
 
 
