@@ -1,0 +1,5 @@
+1. What is Appium & its Features & Supported platform & Languages ?
+2. What is The Appium Architecture ?
+3. Appium Server & UIAutomator2(Android) & XCUI(ios) ?
+4. What is 4723 in Appium ? (n Appium, 4723 is the default port number for the server. The client communicates with Appium by connecting to the server port.)
+5. How To set & Install The Appium ?
