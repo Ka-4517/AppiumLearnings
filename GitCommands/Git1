@@ -1,1 +1,26 @@
+pushing changes only.
+----------------------
+pwd:
+git status :
+git branch:
+git add .
+git commit -m " "
+git push origin master 
+
+Folder -> project -> src -> package -> Files (Location)
+
+1. gitlab start
+-
+-
+-
+-
+2. git config --global user.name " "
+3. git config --global user.email " "
+4. git config --list 
+5. git status 
+
+
+cd: directory Entry 
+ls: view list 
+ls-a:view hidden lists
 
