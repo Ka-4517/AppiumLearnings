@@ -1,0 +1,67 @@
+Testing : Manual testing is a test method in which a QA manually evaluates a software programme to find defects. The goal is to find bugs or defects, ensuring the product is error-free, and guarantee it meets the functional requirements.
+Types of Testing : Manual & Automation 
+Manual : White Box , Black Box , Grey Box 
+Types of Black Box Testing : Functional & Non Functional 
+
+Functional Testing : Functional testing ensures that the requirements or specifications are properly satisfied by the application. This type of testing is particularly concerned with the result of processing. 
+Different Levels of Testing:------
+ex: Unit Testing : Unit Testing basically Included in both White Box Testing and Black Box Testing. 
+Integration Testing : It is used to identify and resolve any issues that may arise when different units of the software are combined.
+System Testing :  System Testing is a level of testing that validates the complete and fully integrated software product.
+End-to-end Testing :  End-to-end (E2E) testing is a software testing method that validates an application's functionality and performance from start to finish.
+Acceptance testing : sometimes called beta testing or end-user testing.
+
+Non-Functional Testing : Non-functional Testing is a type of Software Testing that is performed to verify the non-functional requirements of the application. 
+It verifies whether the behavior of the system is as per the requirement or not.
+ex: Performance,Security Testing.
+
+What exactly is the distinction between verification and validation?
+White box testing:  It is used for verification. In this, we focus on internal mechanisms i.e. how the output is achieved. 
+Black Box testing:  It is used for validation. In this, we ignore internal working mechanisms and focus on “what is the output?” 
+
+Software Testing Principles
+seven different testing principles:-
+Testing shows the presence of defects
+Exhaustive Testing is not possible
+Early Testing
+Defect Clustering
+Pesticide Paradox
+Testing is context-dependent
+Absence of errors fallacy
+
+Software Development Life Cycle (SDLC)
+Requirement Phase
+Design Phase
+Build /Development Phase
+Testing Phase
+Deployment/ Deliver Phase
+Maintenance
+
+Software Testing Life Cycle (STLC)
+Requirement Analysis
+Test Plan Creation
+Environment setup
+Test case Execution
+Defect Logging
+Test Cycle Closure
+
+whiteBox Testing Techniques: 
+statement coverage, branch coverage, and path coverage
+BlackBox Testing Techniques:
+equivalence partitioning, boundary value analysis, decision table testing, and state transition testing.
+
+Drawbacks of Manual Testing?
+Time-consuming,Difficult to measure,Costly
+Agile Methelogies:
+The Agile methodology is a project management approach that involves breaking the project into phases and emphasizes continuous collaboration and improvement.
+Testcase : A test case is a document that contains a set of conditions or actions that are executed on the software application to verify the feature's expected functionality.
+Test scenerio : The test scenario is a detailed document of test cases that cover end to end functionality of a software application in liner statements./The test scenarios can never be used for the text execution process because it does not consist of navigation steps and input.
+Test Plan : Includes test scope, objectives, resources, schedule, test environment, test cases, entry/exit criteria, risks, and deliverables.
+RTM:A requirements traceability matrix (RTM) is a document that describes the relationship between customer requirements and test artifacts, especially test cases.
+Regression Testing : We do regression testing whenever the production/server code is modified.
+Entry Criteria For Testing : Entry criteria, also known as prerequisites or preconditions, are the conditions that must be met before testing can begin.(Requiements Document Approved, Test Plan Approved, Test Data Availability, Test Resources Approved)
+Exit Criteria For Testing : conditions that signify the completion of the testing phase. (TestCase Executed,Defects Closure,Test Coverage Achieved)
+Smoke Testing : Whenever a new build is installed, we make sure that build is testable or not, and if it is testable, then we perform smoke testing (with positive testcases only)
+Sanity Testing : Subset of Regression,Whenever the bugs have been fixed, or a new feature added, we need to perform sanity testing in order to check whether the application is still working fine or not.
+Static Testing : Static testing is performed in the white box testing phase, Test Data,BRD,Line Of Code [Static testing is a verification process,]
+Dynamic Testing : 
