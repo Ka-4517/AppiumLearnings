@@ -19,15 +19,15 @@ What exactly is the distinction between verification and validation?
 White box testing:  It is used for verification. In this, we focus on internal mechanisms i.e. how the output is achieved. 
 Black Box testing:  It is used for validation. In this, we ignore internal working mechanisms and focus on “what is the output?” 
 
-Software Testing Principles
-seven different testing principles:-
-Testing shows the presence of defects
-Exhaustive Testing is not possible
-Early Testing
-Defect Clustering
-Pesticide Paradox
-Testing is context-dependent
-Absence of errors fallacy
+Principles:
+Testing shows the presence of defects(Tests will simply show if you are on the good path to achieving the expected results)
+Exhaustive Testing is not possible(it is not practical to test every possible scenario, path, and input combination)
+Early Testing(good)
+Defect Clustering (most of the bugs are coming from other bugs or have the same root cause)
+Pesticide Paradox (testing is same way not generate new bugs)
+Testing is context-dependent(Not all testing approaches work in each project.)
+Absence of errors fallacy(identify your client's needs incorrectly)
+
 
 Software Development Life Cycle (SDLC)
 Requirement Phase
