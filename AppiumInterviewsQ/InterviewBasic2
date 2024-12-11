@@ -8,5 +8,65 @@ driver.findElement(By.xpath("//ClassName[@index='4']")).click();
 ex2: Xpath using content-desc  - //tagname[@content-desc='value'] || //ClassName[@content-desc='Storage']
 
 
+What is Appium?
+Appium is an open-source mobile testing automation tool that is used to test mobile applications.
+It supports both simulators (iOS) and emulators (Android) as well as actual devices for automation testing (Android and iOS both).
+Appium supports various languages, which have Selenium client libraries, such as Java, PHP, Objective C, C#, Python, JavaScript with node.js, Ruby, and many others. 
+
+1. Explain the JSON Wire protocol used by Appium.
+The JSON Wire Protocol is the method by which client and server data are exchanged. It was created by WebDriver's developers
+ This enables the webdriver to communicate with a server and a client in order to automate tasks. 
+In this protocol, JSON is used to transmit data between the server and the client. 
+Before delivering an object to a server, a client (or the computer running the WebDriver API) turns it into a JSON object. 
+The JSON object is parsed by the server and converted back to a JavaScript object. 
+The response object is converted to a JSON string by the server and returned to the client.
+For use, the client transforms the JSON string to a JavaScript object.
+
+2. What do you mean by Appium Package master? How would you create a package?
+Appium Package master refers to a set of tools that are used to create and manage Appium packages.
+Appium packages includes : appium-uiautomator2-driver, appium-xcuitest-driver, appium-espresso-driver, 
+selenium-webdriver: Enables actions like clicks, scrolls, and input across web and mobile platforms using WebDriver bindings.
+
+
+3. Appium Inspector
+Essential for inspecting UI elements of the app under test.
+Generates locators (id, XPath, accessibilityId) for use in test scripts.
+
+5. appium-doctor
+A diagnostic tool that verifies system configurations.
+Ensures all dependencies (e.g., Java, Node.js, Android SDK, Xcode) are correctly installed.
+
+6. webdriverio
+A Node.js implementation supporting WebDriver API.
+
+7. Explain Desired Capabilities in the context of Appium.
+On iOS and Android, Appium behaves differently. Because it is a "cross-platform" tool, a method must be in place to distinguish between the session requests of the two operating systems. 
+JSON objects, referred to as Desired Capabilities, were introduced to address this specific problem statement.
+Desired Capabilities are key-value pairs of data that separate the establishment of an Android app testing session from that of an iOS app testing session. 
+
+8. Explain Appium Session in the context of Appium.
+Appium session is a medium to send commands to a specific test application.
+a session is like a temporary conversation between your test script and the Appium server to control a mobile app or device.
+   What is an Appium Session?
+When you start a test, Appium creates a session to connect your test script to the mobile app or device you want to test.
+This session is identified by a unique session ID (like a ticket number).
+The session acts as a bridge that allows your test commands (like click, sendKeys, swipe) to control the app on the device.
+
+
+9. What is Appium Server ?
+It acts as a bridge between the client-side automation scripts and the target application.
+How Appium Server Works
+The test scripts send automation commands to the Appium Server.
+The server translates these commands into platform-specific actions.
+It interacts with the appropriate frameworks (like UiAutomator2 for Android or XCUITest for iOS) to control the app.
+Once the task is executed, the server sends the result back to the client.
+
+10. What is simulator & what is Emulator ?
+Emulators and simulators are virtual devices.
+A simulator creates an environment that mimics the behaviors, variables, and configurations in the production environment of an iOS app. It only replicates the software environment.
+TestFlight: Apple’s official tool for distributing and testing iOS apps in a simulated software environment.
+An emulator mimics all the hardware and software features for the Android app production environment of a real device.
+BlueStacks: An Android emulator for running Android apps and games on Windows or macOS.
+Android Emulator (e.g., in Android Studio): Simulates Android devices on your computer for testing apps.
 
 
