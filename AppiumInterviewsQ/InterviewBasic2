@@ -1,2 +1,12 @@
 Interview Basic 1 you will find in Setup Folder.
 
+1. Xpath in Appium (Appium Inspector)
+Syntax:- Xpath=//tagname[@attribute='value']
+
+ex1: Xpath using Index - //tagname[@index='value'] - || if No tag Name then we use ClassName - //ClassName[@index='4']
+driver.findElement(By.xpath("//ClassName[@index='4']")).click();
+ex2: Xpath using content-desc  - //tagname[@content-desc='value'] || //ClassName[@content-desc='Storage']
+
+
+
+
