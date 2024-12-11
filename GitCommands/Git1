@@ -1,4 +1,4 @@
-pushing changes only.
+2. pushing changes only.
 ----------------------
 pwd:
 git status :
@@ -8,6 +8,34 @@ git commit -m " "
 git push origin master 
 
 Folder -> project -> src -> package -> Files (Location)
+
+2. To Merge Changes
+If you want to merge changes from another branch into your current branch after pushing your changes:
+Steps for Merging:
+Switch to the branch where you want to merge changes:
+-git checkout <target-branch>
+Merge another branch into your current branch:
+-git merge <source-branch>
+Resolve any conflicts (if they occur), then add and commit the resolved files:
+-git add <file-name>  # Add resolved files
+-git commit -m "Resolved merge conflicts"
+Push the updated branch:
+-git push origin <target-branch>
+------------------------------------------------------------------------------------------------------------------
+2. To Pull Changes
+If you want to pull the latest changes from the remote branch after your push:
+Steps for Pulling:
+Pull changes from the remote branch into your current branch:
+-git pull origin <branch-name>
+This will fetch and merge changes from the remote branch into your current branch.
+If there are conflicts:
+  -Resolve the conflicts manually.
+  -Add and commit the resolved files:
+-git add <file-name>
+-git commit -m "Resolved merge conflicts after pull"
+Push any changes (if necessary):
+-git push origin <branch-name>
+------------------------------------------------------------------------------------------------------------------------
 
 1. gitlab start
 -
