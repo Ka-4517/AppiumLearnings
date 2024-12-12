@@ -1,0 +1,30 @@
+Emulator: BlueStack - h/w & s/w behavior,configuration with production environment
+Simulator: TestFlight: S/w replicates as software environment.
+Client->Appium server-> Drivers->Devices->->Drivers->Appiumserver->Client 
+Json wire protocol : exchange data b/s client & server.
+Appium Package master-> set of tools in managingAppium pachages
+Appium Package -> drivers,uiautomator2,xcuitest-drivers,Selenium driverWebdriver
+Appium docker -> ensure that all dependencieies are installed & configured
+Desired capability-distinguish b/w Sessions requests
+Appium session : unique id -> use as a bridge allow commands 
+Appium server : is a bridge b/w client-server /  translate commands
+xpath: //tagname[@index'value']
+TestNG : @beforemethod, @aftermethod,<@Test=Method
+TestNG Overview: A testing framework facilitating parallel execution, advanced annotations, and flexible configuration.
+@DataProvider supplies data to test methods.
+@dependsOnMethods ensures method dependencies.
+Groups categorize test methods.@Test(groups = "smoke")
+TestNG generates two types of reports: Emailable reports and Index reports.
+Extent Reports: An open-source HTML reporting library that can be integrated with TestNG. Extent Reports present results as pie charts. 
+
+
+
+******************
+[Hybrid Structured Frame work Model] - POM,DATA-DRIVEN,TestNG
+Pageobject:Inclused xpaths
+BaseClasses: Have implemntation code 
+Test.Resource: Have ExtentReport generation code 
+Utility: Common fc & Browser invoking code 
+utility.Resource: Data to signup up user 
+TestData: Sheet to extract (using Follio-Java API use fetch data from excel)
+Advantages : Maintainability , Reusability, Sacalability(add ons)
