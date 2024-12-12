@@ -1,0 +1,38 @@
+Manual Testing 
+
+Principles:
+Testing shows the presence of defects(Tests will simply show if you are on the good path to achieving the expected results)
+Exhaustive Testing is not possible(it is not practical to test every possible scenario, path, and input combination)
+Early Testing(good)
+Defect Clustering (most of the bugs are coming from other bugs or have the same root cause)
+Pesticide Paradox (testing is same way not generate new bugs)
+Testing is context-dependent(Not all testing approaches work in each project.)
+Absence of errors fallacy(identify your client's needs incorrectly)
+
+Software Development Life Cycle (SDLC)
+Requirement Phase
+Design Phase
+Build /Development Phase
+Testing Phase
+Deployment/ Deliver Phase
+Maintenance
+
+Software Testing Life Cycle (STLC)
+Requirement Analysis
+Test Plan Creation
+Environment setup
+Test case Execution
+Defect Logging
+Test Cycle Closure
+
+Testcase: detail that contains conditions & steps & inputs
+Testscenerios: detailed document with one liner (No steps & condition & inputs)
+Regression: whwenever server updated 
+Sanity: Whenever bug fixes 
+Smoke : When new build provide +cases
+Load : use to measure maximum quantity of users/load it handles
+Stress : capture the breaking point/failure point
+Alpha : Alpha testing does not involve in-depth testing of the software.Alpha testing is a type of acceptance testing.(This testing performed before the release of the product.)
+Beta : (performed absense of tester / presence of real user)Testing performed by the client, stakeholder, and end-user.(Production)Beta testing always is done after the alpha testing, and before releasing it into the market.
+Test script:set of instructions
+Test suite:collection of Test cases
