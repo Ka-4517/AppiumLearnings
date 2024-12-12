@@ -1,0 +1,145 @@
+What is XAMPP?
+XAMPP is one of the widely used cross-platform web servers, which helps developers to create and test their programs on a local webserver. 
+It was developed by the Apache Friends.
+What is XAMPP?
+XAMPP is an abbreviation where X stands for Cross-Platform, A stands for Apache, M stands for MYSQL, and the Ps stand for PHP and Perl, respectively.
+XAMPP Format Support: .EXE,.7z - 7zip file,.ZIP
+
+Installation Process Of XAMPP.
+1. Download & Install XXAMP (xampp-windows-x64-8.0.30-0-VS16-installer)
+2. Start APACHE SERVER Fisrt To run the Database on Local
+3. Start MYSQL/SQL 
+4. Database Running Program :
+  1. Create your first Database
+-You can create you Database by click 'New' then you will see the form which you need to complete to create your own. 
+Enter name of Database, charset, then click 'Create' to start creating.
+   2. Create Table on your Database 
+-In the right side, you can create table by enter the name and number of column then click 'Go' to go ahead.
+-You can set you field name, type, length, .etc... in your table and then click 'Save' to complete creating Table.
+-Done, you can see all table in the left side list... and simply to update, create more tables.
+   3. Set Password to phpMyAdmin on XAMPP
+Step 1: On phpMyAdmin page, click on the ‘User accounts’ option at the top of the page.
+Step 2: Now press the ‘Edit Privileges’ under ‘Actions’ option for the Username ‘root’ and Hostname ‘localhost.’
+Step 3: Now choose the third tab ‘Change password’ and type your password in the provided field, retype the password to confirm 
+it and then finally click on the ‘Go’ key to conclude the process.
+4. Import & export database features also there. Read This blog(https://blog.shiftasia.com/set-up-and-work-with-mysql-on-window-with-xampp/)
+------------------------------
+Start Running Queries On XXAMP
+------------------------------
+Q.1. To Create Table in XXAMP SQL ?
+Ans : CREATE TABLE BaggageInfo(
+    ticketNo BIGINT PRIMARY KEY,
+    fullName VARCHAR(255),
+    gender CHAR(1),
+    -- Assuming 'M', 'F', or 'O' for gender
+    contactPhone VARCHAR(15),
+    confNo VARCHAR(100),
+    bagInfo JSON
+);
+
+Q.2. To Create Another Table with name stream_acct , acct_id INTEGER,profile_name STRING,account_expiry TIMESTAMP(9),acct_data JSON, 
+PRIMARY KEY(acct_id)?
+Ans : CREATE TABLE stream_acct(
+acct_id INTEGER PRIMARY KEY,
+profile_name VARCHAR(255),
+account_expiry TIMESTAMP,
+acct_date JSON
+);
+
+Q.3. Create A Table if that was not exist?
+CREATE TABLE IF NOT EXISTS storeAcct (
+    contactPhone VARCHAR(15),
+    PRIMARY KEY(contactPhone)
+);
+
+Q.4. Create a database and a table
+Question: Create a database CompanyDB. 
+Inside it, create a table Employees with columns: id, name, age, department, and salary.
+Ans : 
+CREATE DATABASE CompanyDB;
+USE CompanyDB;
+
+CREATE TABLE Employees(
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(255),
+    age INT,
+    department VARCHAR(255),
+    salary DECIMAL(10,2)
+    );
+
+Q.5. Insert data into a table
+Question: Insert the following data into the Employees table:
+John, 25, HR, 50000
+Alice, 30, IT, 75000
+Bob, 28, Finance, 60000
+Ans : 
+INSERT INTO Employees(name,age,department,salary)
+VALUES 
+('KARAN','25','Testing','23200')
+;
+OR
+INSERT INTO Employees (id, name, age, department, salary)
+VALUES 
+    (2, 'John', 25, 'HR', 50000),
+    (3, 'Alice', 30, 'IT', 75000),
+    (4, 'Bob', 28, 'Finance', 60000);
+
+
+Q.6. Retrieve all records
+Question: Write a query to fetch all records from the Employees table.
+Answer:
+SELECT * FROM Employees;
+
+Q.7. Filter with conditions
+Question: Retrieve employees from the IT department earning more than 60000.
+Answer: 
+SELECT * FROM Employees
+WHERE department = 'IT' AND salary > 60000;
+
+Q.8. Delete Entry From Table
+DELETE FROM `Employees` WHERE 0
+
+Q.9. Update records
+Question: Update Bob's salary to 65000.
+Answer : 
+UPDATE Employees
+SET salary = 65000
+WHERE name = 'Bob';
+
+Q.10. Delete records
+Question: Remove employees from the HR department.
+Answer : 
+DELETE FROM Employees
+WHERE department = 'HR';
+
+Q.11. Aggregate functions
+Question: Find the average salary of employees.
+SELECT AVG(salary) AS AverageSalary FROM Employees;
+--------------------
+SQL Aggregate Functions
+The most commonly used SQL aggregate functions are:
+
+MIN() - returns the smallest value within the selected column
+MAX() - returns the largest value within the selected column
+COUNT() - returns the number of rows in a set
+SUM() - returns the total sum of a numerical column
+AVG() - returns the average value of a numerical column
+*Aggregate functions ignore null values (except for COUNT()).
+---------------------------
+Q.12. Find Minimum Salary of Employee.
+SELECT MIN(salary) AS MinimumSalary FROM Employees;
+
+Q.13. Find MAXIMUM Salary of Employee.
+SELECT MAX(salary) AS MaximumSalary FROM Employees;
+
+Q.14. Find No. of Rows in Salary Column.
+SELECT COUNT(salary) AS NumberOfRows FROM Employees;
+
+Q.15. Group by and HAVING
+Question: Find the total salary paid per department and show only those departments where the total salary exceeds 60000.
+SELECT department, SUM(salary) AS TotalSalary
+FROM Employees
+GROUP BY department
+HAVING SUM(salary) > 60000;
+-----------------------------------------------
+Group By : The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
