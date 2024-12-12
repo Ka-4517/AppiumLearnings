@@ -1,0 +1,23 @@
+1. Download & Install Git in windows/Mac
+2. Open Terminal 
+  -git --version
+3. Set your Email & username if not set 
+ -run the git config --list command and look for the user.name and user. email fields in the output.
+ -To set 
+ -git config --global user.name " your username "
+ -git config --global user.email " your emailid "
+ -To check which email is set git config --global user.email
+4. Suppose You want to change these
+  -git config --global --edit
+5. Create Folder Using Git 
+ -cd c 
+ -mkdir LetsLearnGit
+ -cd LetsLearnGit
+ -git init (Now this folder is become repository & git initialized)
+ -Check what we have in this folder 
+ -ls
+ -ls -a
+ * a .git will now visible 
+6. Now Add some files create some project / Fill that Folder 
+ -git status
+ 
