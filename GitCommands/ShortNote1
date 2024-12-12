@@ -1,0 +1,25 @@
+1. Git 
+PUSH 
+-git branch
+-git add .
+-git commit -m " "
+-git push origin master (My branch)
+
+MERGE
+-git checkout <target-branch>
+-git merge <source-branch>
+-git add <file-name>
+-git commit -m "Resolved merge"
+-git push origin <target-branch>
+
+PULL
+-git pull origin <branch-name>
+-git add <file-name>
+-git commit -m " "
+-git push origin <branch-name>
+
+Jenkins is a server-based application that can be used for: 
+Automating the build process
+Triggering builds based on conditions or changes in the source code repository
+Building pipelines and workflows
+allows you to set a time and date for executing your tests.
