@@ -61,4 +61,12 @@ Date:   Fri Dec 13 12:55:09 2024 +0530
    -git checkout karandev
 21. User want to merge the code what user written in karan/stage want to merge in karandev
    -git merge karan/stage
-
+   -git log (to view merges done)
+22. Suppose you want to create a file that will 'not save on git' git will ignore that files 
+   -Create a file (Secret things or key in file)
+   -Go to folder & Create a file ".gitignore"
+   -And after that run this commands:
+   -git status
+   -Now if you want any file will not save to git or ignore then that file name you need to write in that "gitignore" file 
+   -And then command : git status (you will see Now git not traching that files)
+23. 
