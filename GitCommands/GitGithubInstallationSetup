@@ -71,4 +71,9 @@ Date:   Fri Dec 13 12:55:09 2024 +0530
    -And then command : git status (you will see Now git not traching that files)
 23. Now Create a New Repo on Your Github
     -Manually Create Repo on Github
-    -
+    -We know we have already creatd the local repo's/branch 
+24. push an existing repository from command line
+    -git remote -v  
+    -git remote add origin https://github.com/Ka-4517/Workstatus-Product-Script.git
+    -git remote -v
+
