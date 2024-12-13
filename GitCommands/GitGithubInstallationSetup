@@ -42,5 +42,23 @@ Date:   Fri Dec 13 12:55:09 2024 +0530
 13. After this above command you will notice the Changes done On that Commit will visible & Current things Erased.
 14. If User wants to go the current Commit/Latest Commit then type 
    -git checkout master
+15. Now check branch
+   -git branch
+   -git log
+16. when we start git default it set master branch & after that we need to create other branches / (Personal branch)
+   -git branch karandev
+   -git branch (to view is it created or not)
+17. Now user wants to change the branch from master to karandev
+   -git checkout karandev
+   -git branch (to check that it actually changed or not)
+18. Suppose User wants to create another branch & checkout/switched with single command that can also be done 
+   -git checkout -b karan/stage
+19. To some changes in your files & Add changes to branch
+   -git status
+   -git add <file name>
+   -git commit -m "commit in stage"
+20. Suppose I want to go back to karandev & see that files on at that branch 
+   -git checkout karandev
+21. User want to merge the code what user written in karan/stage want to merge in karandev
+   -git merge karan/stage
 
- 
