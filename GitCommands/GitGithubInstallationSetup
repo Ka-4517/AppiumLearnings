@@ -10,14 +10,37 @@
 4. Suppose You want to change these
   -git config --global --edit
 5. Create Folder Using Git 
- -cd c 
- -mkdir LetsLearnGit
- -cd LetsLearnGit
- -git init (Now this folder is become repository & git initialized)
+  -cd c 
+  -mkdir LetsLearnGit
+  -cd LetsLearnGit
+  -git init (Now this folder is become repository & git initialized)
  -Check what we have in this folder 
- -ls
- -ls -a
+  -ls
+  -ls -a
  * a .git will now visible 
 6. Now Add some files create some project / Fill that Folder 
  -git status
+7. Now track & Add 
+  -git add <filename>
+  -git status
+Now it is tracked / Staging area me agyi file
+8. Now Commit 
+  -git commit -m " "
+9. To view How many Commits till Now made 
+  -git log
+10. To view what is done in status 
+  -git status 
+11. Do some changes & add some files then add & commit that too 
+  -git add . / -git add <filename>
+  -git commit -m " "
+12. Now if you want to go to First commit you did 
+  -git checkout <hash code of that commit/branch name>
+  -Enter
+ex: commit bc6d354bb6deafbf07ddd20e5ff7171268c12816 <---------This is the hash code I am talking about 
+Author: Karan Gupta <karangupta4517@gmail.com>
+Date:   Fri Dec 13 12:55:09 2024 +0530
+13. After this above command you will notice the Changes done On that Commit will visible & Current things Erased.
+14. If User wants to go the current Commit/Latest Commit then type 
+   -git checkout master
+
  
