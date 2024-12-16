@@ -91,6 +91,27 @@ ex: In My case I am in : Karan@Karan_Gupta-V6171 MINGW64 /c/LetsLearnGit (karan/
 26. If I want to push that Code that is only in Karan/stage branch 
     -git branch -M karan/stage 
     -git push -u origin master 
-27. 
+27. As I have commit only Workstatus Folder Under that the codes and other files so I need to create the git under that 
+then Commit & push (mistake from my side I did )
+**********Normal Code To commit & push******************
+    -git add .
+    -git status
+    -git commit -m "Committing the Project Workstatus inner files"
+    -git log 
+    -git status 
+    -git remote -v
+    -git remote add origin https://github.com/Ka-4517/Workstatus-Product-Script.git
+    -git branch -M master
+    -git push -u origin master 
+*******************************************************************************Issue Facing "Rejected!" - Access Related Resolved********
+    -git reset --soft
+    -git status
+    -git checkout master
+    -git reset --hard origin/master
+    -git add .
+    -git commit -m "Start fresh with a new commit"
+    -git push -u origin master --force
+
+
 
 
