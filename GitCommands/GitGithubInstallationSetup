@@ -112,6 +112,56 @@ then Commit & push (mistake from my side I did )
     -git commit -m "Start fresh with a new commit"
     -git push -u origin master --force
 
+28. Do some changes & then Push To github 
+   -git add .
+   -git commit -m " "
+   -git push [it will run because origin/master is already set]
+****You will see the changes comes*****
+29. Facing Error Again 
+To https://github.com/Ka-4517/Workstatus-Product-Script.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Ka-4517/Workstatus-Product-Script.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+***Solution******
+-git log origin/master
+-git log 
 
-
+30. Changing Entire Project Location & Now pushing Again
+-cd new location
+-git init
+-git add .
+-git commit -m "commit fresh"
+-git push
+**error: remote: Permission to rahul-kukreti/Workstatus.git denied to Ka-4517.
+fatal: unable to access 'https://github.com/rahul-kukreti/Workstatus.git/': The requested URL returned error: 403
+-git remote -v
+This will display something like:
+origin  https://github.com/rahul-kukreti/Workstatus.git (fetch)
+origin  https://github.com/rahul-kukreti/Workstatus.git (push)
+* Update the Remote Repository URL
+To connect your local repository to a different GitHub repository (e.g., your own), update the origin URL:
+-git remote set-url origin https://github.com/Ka-4517/Workstatus-Product-Script.git
+-git remote -v
+-git push -u origin master
+Again Access issue **
+**Solution**
+-git pull origin master
+$ git pull origin master
+remote: Enumerating objects: 72, done.
+remote: Counting objects: 100% (72/72), done.
+remote: Compressing objects: 100% (58/58), done.
+remote: Total 72 (delta 3), reused 67 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (72/72), 86.62 KiB | 534.00 KiB/s, done.
+From https://github.com/Ka-4517/Workstatus-Product-Script
+ * branch            master     -> FETCH_HEAD
+ + 76e7321...d551eb0 master     -> origin/master  (forced update)
+fatal: refusing to merge unrelated histories
+-You can allow Git to merge the unrelated histories by adding the --allow-unrelated-histories flag:
+-git pull origin master --allow-unrelated-histories
+-git push
+********************************************************
 
