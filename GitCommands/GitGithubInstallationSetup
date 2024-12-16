@@ -72,8 +72,25 @@ Date:   Fri Dec 13 12:55:09 2024 +0530
 23. Now Create a New Repo on Your Github
     -Manually Create Repo on Github
     -We know we have already creatd the local repo's/branch 
-24. push an existing repository from command line
+24. push an existing repository from command line (Existing Repository here means: You created the project on local and want to push on github repo)
     -git remote -v  
     -git remote add origin https://github.com/Ka-4517/Workstatus-Product-Script.git
     -git remote -v
+*****OUTPUT
+origin  https://github.com/Ka-4517/Workstatus-Product-Script.git (fetch)
+origin  https://github.com/Ka-4517/Workstatus-Product-Script.git (push)
+****this is the Original repo now for fetch & push the codes
+25. To Push 
+    -git branch -M <branchName to push>
+    -git push -u origin <branchName to push>
+ex: In My case I am in : Karan@Karan_Gupta-V6171 MINGW64 /c/LetsLearnGit (karan/stage) <---This Location 
+    And want To Push the Master branch Commited code to Github Repo 
+    -git remote add origin https://github.com/Ka-4517/Workstatus-Product-Script.git
+    -git branch -M master 
+    -git push -u origin master
+26. If I want to push that Code that is only in Karan/stage branch 
+    -git branch -M karan/stage 
+    -git push -u origin master 
+27. 
+
 
