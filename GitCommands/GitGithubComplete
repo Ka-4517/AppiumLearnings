@@ -184,6 +184,33 @@ fatal: refusing to merge unrelated histories
 3. send pull request 
 ---Another way : Add collaborator to your same repo
 --(That people) Do clones , Changes , & Push
-*How to do Fork
--
+*How to do Fork & Clone
+-Go to your members repo in which you want a clone 
+-Click on Fork (a copy of same repo will created in your github)
+-First we need to take this to our local 
+-copy the http link (https://github.com/Ka-4517/First-Contribution.git)
+-Now go to location where in local you to put that repo/project [cd ..]/Not the same location where our project is putted
+-git clone <that url you copied paste here>
+*************Clone Done******************
+34. to view what there in that project that you cloned 
+-ls / ls -a
+-cd First-Contribution
+35. Do changes & commit & add & push 
+--git status
+--Do changes in files 
+--git status (you will see modification)
+--vim README.md (To do change in file)  [optional]
+--cat README.md (To check changes done in File)   [optional]
+****Now Create new branch & commit & Push 
+--git branch FirstClone
+--git branch
+--git checkout FirstClone
+****Now Commit 
+--git add .
+--git commit -m " "
+--git remote add new-origin <new-repo-URL>
+--git remote -v
+--changes ko push karna hai jo clone lekar humne commit kiya ab tak 
+
+
 
