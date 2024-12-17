@@ -178,3 +178,12 @@ fatal: refusing to merge unrelated histories
 --git add <filename>/full folder . (use dot)
 --git commit -m " "
 --git push -u origin karandev
+33. If you want that other people can also change in your repo
+1. people will fork 
+2. do changes 
+3. send pull request 
+---Another way : Add collaborator to your same repo
+--(That people) Do clones , Changes , & Push
+*How to do Fork
+-
+
