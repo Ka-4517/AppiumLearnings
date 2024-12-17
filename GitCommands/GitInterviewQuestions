@@ -1,1 +1,67 @@
+What is Git and why is it used?
+Git is the most popular, open-source version control system (DVCS) used for handling the development of small and 
+large projects in a more efficient and neat manner.
+It is most suitable when there are multiple people working on projects as a team and is used for tracking the project 
+changes and efficiently supports the collaboration of the development process.
+It has an amazing branching system that supports nonlinear development along with keeping the developers accountable 
+for their code.
+
+
+What is a git repository?
+A repository is a file structure where git stores all the project-based files. 
+Git can either stores the files on the local or the remote repository.
+
+
+What does git clone do?
+The command creates a copy (or clone) of an existing git repository. 
+Generally, it is used to get a copy of the remote repository to the local repository.
+
+What does the command git config do?
+The git config command is a convenient way to set configuration options
+To set up your name and email address 
+git config --global user.name “<<your_name>>”
+git config --global user.email “<<your_email>>”
+
+Can you explain head in terms of git and also tell the number of heads that can be present in a repository?
+A head is nothing but a reference to the last commit object of a branch.
+For every repository, there will always be a default head referred to as “master” or now “main” (as per GitHub) 
+but there is no restriction to the count of heads available.
+Usages:
+- To go or checkout to 1 commit before the latest commit, we use git checkout HEAD~1
+- To uncommit the last 3 commits without losing the changes, we first run git reset HEAD~3. Then we can see the changes made in the last 3 commits and then update it manually and commit it finally.
+- In order to uncommit the last 3 commits and also remove the changes, we can run the command: git reset --hard HEAD~3. This command will completely remove all the changes.
+- To look into the changes made in the last 3 commits, we can run git diff HEAD~3
+- To make a new commit by reverting the last 3 commits, we can run the command: git revert --no-commit HEAD~3...HEAD
+
+What is a conflict?
+Git usually handles feature merges automatically but sometimes while working in a team environment, there might be cases of conflicts such as:
+1. When two separate branches have changes to the same line in a file
+2. A file is deleted in one branch but has been modified in the other.
+
+
+Define “Index”.
+Before making commits to the changes done, the developer is given provision to format and review the files and make innovations to them. 
+All these are done in the common area which is known as ‘Index’ or ‘Staging Area’.
+
+
+What does git add command do?
+This command adds files and changes to the index of the existing directory.
+You can add all changes at once using git add .
+You can add files one by one specifically using git add <file_name>
+You can add contents of a particular folder by using git add /<folder_name>/
+
+
+What is the command used to delete a branch?
+To delete a branch we can simply use the command git branch –d [head].
+To delete a branch locally, we can simply run the command: git branch -d <local_branch_name>
+To delete a branch remotely, run the command: git push origin --delete <remote_branch_name>
+Deleting a branching scenario occurs for multiple reasons. One such reason is to get rid of the feature branches once it has been merged into the development branch.
+
+
+What differentiates between the commands git remote and git clone?
+git remote command creates an entry in  git config that specifies a name for a particular URL. 
+Whereas git clone creates a new git repository by copying an existing one located at the URL.
+
+
+Differentiate between git pull and git fetch.
 
