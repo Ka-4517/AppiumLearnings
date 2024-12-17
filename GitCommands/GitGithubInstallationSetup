@@ -163,5 +163,11 @@ fatal: refusing to merge unrelated histories
 -You can allow Git to merge the unrelated histories by adding the --allow-unrelated-histories flag:
 -git pull origin master --allow-unrelated-histories
 -git push
-********************************************************
-
+******Push Done Change To GitHub**************************
+31. Do changes from Eclipse add some files or anything 
+-git status
+-git add .
+-git commit -m " "
+-git push 
+***********************************************************
+32. 
