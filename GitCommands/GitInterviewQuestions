@@ -64,4 +64,22 @@ Whereas git clone creates a new git repository by copying an existing one locate
 
 
 Differentiate between git pull and git fetch.
+git fetch:	Downloads changes from the remote but does NOT merge them into your branch. It updates the remote tracking branches.
+git pull:	Downloads changes from the remote AND merges them into your current branch.
+In Simple Words:
+git fetch = "Show me what's new on the remote, but don’t change my local branch yet."
+git pull = "Bring in the new changes and update my branch automatically."
 
+
+Difference b/w Branch & Pull Request?
+A branch is like a separate workspace or copy of your code where you can work independently on features, 
+fixes, or experiments without disturbing the main codebase.
+A Pull Request (PR) is a request to merge changes from one branch into another (e.g., from feature-1 into master).
+It’s a way to review, discuss, and approve code before merging it into the main branch.
+
+
+Why do we not call git “pull request” as “push request”?
+“Push request” is termed so because it is done when the target repository requests us to push our changes to it.
+“Pull request” is named as such due to the fact that the repo requests the target repository to grab (or pull) the changes from it.
+Example:
+After you finish working on feature-1, you open a pull request to merge feature-1 into master.
