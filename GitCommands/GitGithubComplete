@@ -170,4 +170,11 @@ fatal: refusing to merge unrelated histories
 -git commit -m " "
 -git push 
 ***********************************************************
-32. 
+32. Till Now we only push the master branch to github Now we will push aother branches.
+-create branch on local -git branch karandev 
+-now go to that branch/switch
+--git checkout karandev
+-Do changes in files add the changes to karandev
+--git add <filename>/full folder . (use dot)
+--git commit -m " "
+--git push -u origin karandev
