@@ -1,3 +1,25 @@
+Can you tell the difference between Git and GitHub?
+What is Git?
+Git is a version control system (VCS) that tracks changes in your code files.
+It is a tool installed locally on your computer.
+It helps developers save, manage, and track changes to code, collaborate on projects, and roll back to previous versions if needed.
+Key Features:
+Tracks changes in files (commits).
+Allows branching, merging, and reverting changes.
+Works offline (no internet required for local operations).
+
+What is GitHub?
+GitHub is a cloud-based platform for hosting Git repositories.
+It provides a place where developers can store, share, and collaborate on code using Git.
+GitHub adds extra features like pull requests, issue tracking, and team collaboration tools.
+Key Features:
+Host and share Git repositories online.
+Enables team collaboration with pull requests and code reviews.
+Provides features like issue tracking, wikis, and CI/CD integration.
+Requires an internet connection.
+*********************************************************************************************************************
+
+
 What is Git and why is it used?
 Git is the most popular, open-source version control system (DVCS) used for handling the development of small and 
 large projects in a more efficient and neat manner.
