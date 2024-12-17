@@ -109,3 +109,16 @@ Why do we not call git “pull request” as “push request”?
 “Pull request” is named as such due to the fact that the repo requests the target repository to grab (or pull) the changes from it.
 Example:
 After you finish working on feature-1, you open a pull request to merge feature-1 into master.
+
+How will you create a git repository?
+Have git installed in your system. 
+Then in order to create a git repository, create a folder for the project and then run git init.
+
+What do the git diff and git status commands do?
+git status: To check which files are changed, staged, or untracked.
+git diff: To see the exact changes made to your files.
+
+What is best advisable step in cases of broken commit: Create an additional commit OR amend an existing commit?
+It is always advisable to create an additional commit rather than amending the existing commit due to the following reasons:
+- Doing the amend operation destroys the previously saved state of that commit. If only the commit message gets changes or destroyed, it's acceptable but there might be cases when the contents of the commits get amended. This results in the loss of important information associated with the commit.
+- Over usage of git commit --amend can have severe repercussions as the small commit amend can continue to grow and gather unrelated changes over time
