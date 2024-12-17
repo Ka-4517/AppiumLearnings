@@ -17,6 +17,10 @@ Host and share Git repositories online.
 Enables team collaboration with pull requests and code reviews.
 Provides features like issue tracking, wikis, and CI/CD integration.
 Requires an internet connection.
+
+In Simple Words:
+Git = A tool to manage versions of code on your local system.
+GitHub = A website that lets you store Git repositories online and collaborate with others.
 *********************************************************************************************************************
 
 
