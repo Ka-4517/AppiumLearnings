@@ -210,7 +210,11 @@ fatal: refusing to merge unrelated histories
 --git commit -m " "
 --git remote add new-origin <new-repo-URL>
 --git remote -v
---changes ko push karna hai jo clone lekar humne commit kiya ab tak 
+--changes ko push karna hai jo clone lekar humne commit kiya ab take (Facing issue)
+--git status 
+--git branch -M FirstClone
+--git push -u origin FirstClone
+
 
 
 
