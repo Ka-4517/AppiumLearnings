@@ -1,3 +1,19 @@
+1. Download Git on windows 
+2. Check git version 
+3. set configuration (email,username)
+4. edit configurations
+5. create folder using git
+6. check folder listing 
+7. Add some files to project manually 
+8. check status 
+9. Add commit 
+10. To view Commits done
+11. Do changes & Commit 
+12.  Switch branch create branch 
+13. Switch branch & commit changes to that only 
+14. change repo/origin 
+15. git clone/fork
+***************This above things I have done in CompleteGitGithub file***************
 1. Git 
 PUSH 
 -git branch
