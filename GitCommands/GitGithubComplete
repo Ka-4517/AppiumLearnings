@@ -214,7 +214,13 @@ fatal: refusing to merge unrelated histories
 --git status 
 --git branch -M FirstClone
 --git push -u origin FirstClone
-
+**Message shows:This branch is 1 commit ahead of Anuj-Kumar-Sharma/First-Contribution:master (Means we are on track)
+--Now we will raise/create pull request 
+--Just beow this line - you will contribute button click 
+--Open pull request
+--Create a Pull request 
+*https://imghostr.com/4061c1_0nw this image will show how pull request page looks like*
+[Fork-Clone-Changes-Commit to your branch-Push to your repo-Pull request raise for merge]
 
 
 
