@@ -13,18 +13,40 @@
 This is the table And This is the List of question based on this we need to solve:-------
 Basic Queries
 Retrieve all records from the table.
+--SELECT * From pricing_data;
+
 Fetch only the Seq_id and M_Price columns.
+--SELECT Seq_id , M_Price From pricing_data;
+
 Display records where Currency is "INR."
+--SELECT * FROM pricing_data WHERE Currency = 'INR';
+
 Find records where M_Price is greater than 500.
+--SELECT * FROM pricing_data WHERE M_price > 500;
+
 List all distinct currencies in the table.
+--SELECT DISTINCT Currency From pricing_data;
+
+
 Conditional Queries
 Fetch records where Pricing_factor is greater than 10.
+--SELECT * FROM pricing_data where Pricing_factor > 10;
+
 Retrieve records where Prc_date is after "2010-01-01."
+--SELECT * FROM pricing_data where Prc_date > "2010-01-01";
+
 Display records where M_Price is less than 100.
+--
+
 Find all records with Currency not equal to "INR."
+--SELECT * FROM pricing_data where Currency != 'INR';
+
 Retrieve records where Prc_date is between "2010-01-01" and "2020-01-01."
+--SELECT * FROM pricing_data where Prc_date BETWEEN "2010-01-01" and "2020-01-01";
+
 Aggregate Queries
 Calculate the total M_Price of all records.
+
 Find the average M_Price for records in "INR."
 Count the total number of records.
 Find the maximum M_Price in the table.
