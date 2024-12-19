@@ -1,0 +1,56 @@
+Q.1. "I have a list of integers. I want to find the sum of the elements at indices whose sum is 10. 
+For example, if indices 2 and 8 sum to 10, I want to include the sum of the elements at those indices 
+in the final result."
+
+
+public class SumOfElementsAtIndicesSum10 {
+
+    public static int sumOfElements(List<Integer> inputList) {
+        int sum = 0;
+        for (int i = 0; i < inputList.size() - 1; i++) {
+            for (int j = i + 1; j < inputList.size(); j++) {
+                if (i + j == 10) {
+                    sum += inputList.get(i) + inputList.get(j);
+                }
+            }
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> inputList = new ArrayList<>();
+        inputList.add(1);
+        inputList.add(2);
+        inputList.add(10);
+        inputList.add(4);
+        inputList.add(5);
+        inputList.add(10);
+        inputList.add(7);
+        inputList.add(8);
+        inputList.add(9);
+        inputList.add(10);
+
+        int result = sumOfElements(inputList);
+        System.out.println("Sum of elements at indices whose sum is 10: " + result); 
+    }
+}
+
+Way 2 : 
+
+public class SumOfElementsAtIndicesSum10 {
+	 public static void findAndPrintSums(int[] arr) {
+	        for (int i = 0; i < arr.length - 1; i++) {
+	            for (int j = i + 1; j < arr.length; j++) {
+	                if (i + j == 10) {
+	                    int sumValue = arr[i] + arr[j];
+	                    System.out.println("index(" + i + ") + index(" + j + ") = 10 SumValue = " + sumValue);
+	                }
+	            }
+	        }
+	    }
+
+	    public static void main(String[] args) {
+	        int[] arr = {1, 2, 10, 4, 5, 10, 7, 8, 9, 10}; 
+	        findAndPrintSums(arr); 
+	    }
+}
