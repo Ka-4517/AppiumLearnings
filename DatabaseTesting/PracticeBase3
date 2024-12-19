@@ -1,8 +1,3 @@
-Q.1. From the product_price table, write an MYSQL query to find the total and average market price for each currency where:
-The average market price is greater than 100.
-The currency is INR or AUD.
-Here's your data formatted in a table:
-
 | Seq_id | Prc_date   | M_Price | Currency | Pricing_factor |
 |--------|------------|---------|----------|----------------|
 | HCL    | 2013-07-17 | 487.39  | INR      | 1              |
@@ -15,6 +10,62 @@ Here's your data formatted in a table:
 | Ran    | 2008-08-09 | 118     | CHF      | 80             |
 | TCS    | 2007-09-08 | 12      | USD      | 8              |
 | WIP    | 2010-10-05 | 234     | AUD      | 10             |
+This is the table And This is the List of question based on this we need to solve:-------
+Basic Queries
+Retrieve all records from the table.
+Fetch only the Seq_id and M_Price columns.
+Display records where Currency is "INR."
+Find records where M_Price is greater than 500.
+List all distinct currencies in the table.
+Conditional Queries
+Fetch records where Pricing_factor is greater than 10.
+Retrieve records where Prc_date is after "2010-01-01."
+Display records where M_Price is less than 100.
+Find all records with Currency not equal to "INR."
+Retrieve records where Prc_date is between "2010-01-01" and "2020-01-01."
+Aggregate Queries
+Calculate the total M_Price of all records.
+Find the average M_Price for records in "INR."
+Count the total number of records.
+Find the maximum M_Price in the table.
+Determine the minimum M_Price for "USD" currency.
+Grouping and Sorting Queries
+Group records by Currency and calculate the sum of M_Price for each currency.
+Sort the table by Prc_date in ascending order.
+Sort the table by M_Price in descending order.
+Fetch the top 3 records with the highest M_Price.
+List records grouped by Pricing_factor and count them.
+Join Queries (if there's another related table)
+If a related table has company names, join it to get full company names for Seq_id.
+Join with a currency exchange rate table to convert M_Price to another currency.
+Advanced Queries
+Calculate the converted price using M_Price and Pricing_factor for each record.
+Find the earliest and latest Prc_date in the table.
+Fetch records where the Seq_id starts with "H."
+Find records where Prc_date is a weekend.
+Check how many records have Pricing_factor equal to 50.
+Subqueries
+Fetch records where M_Price is greater than the average price.
+Find records where the Prc_date is the earliest in their Currency group.
+Retrieve the Seq_id with the second-highest M_Price.
+Update and Delete Queries (if allowed)
+Update the Currency for Seq_id "Ran" to "USD."
+Delete records where M_Price is less than 20.
+Update the Pricing_factor to 2 for all "INR" currencies.
+Delete all records with a Prc_date earlier than "2008-01-01."
+Combination Queries
+Fetch the record count and total M_Price for "INR" and "USD."
+Display the top 5 most expensive items grouped by Currency.
+Find the difference between the highest and lowest M_Price in the table.
+Identify the Seq_id with M_Price closest to 500.
+***************************************************************************************************************************************
+Some Multi scenario Type :-------
+Q.1. From the product_price table, write an MYSQL query to find the total and average market price for each currency where:
+The average market price is greater than 100.
+The currency is INR or AUD.
+Here's your data formatted in a table:
+
+
 expected:
 Here's your data in a table format:
 | Currency | Total_Price | Avg_Price |
