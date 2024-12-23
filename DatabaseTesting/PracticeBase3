@@ -36,7 +36,7 @@ Retrieve records where Prc_date is after "2010-01-01."
 --SELECT * FROM pricing_data where Prc_date > "2010-01-01";
 
 Display records where M_Price is less than 100.
---
+--SELECT * FROM pricing_data Where M_price < 100
 
 Find all records with Currency not equal to "INR."
 --SELECT * FROM pricing_data where Currency != 'INR';
@@ -46,10 +46,21 @@ Retrieve records where Prc_date is between "2010-01-01" and "2020-01-01."
 
 Aggregate Queries
 Calculate the total M_Price of all records.
+--SELECT SUM(M_price) AS Total_Price from pricing_data;
 
 Find the average M_Price for records in "INR."
+--SELECT AVG(M_price) AS Average_Price from pricing_data where Currency='INR';
+
 Count the total number of records.
+--SELECT COUNT(*) from pricing_data;
+
 Find the maximum M_Price in the table.
+--SELECT MAX(M_price) from pricing_data;
+--SELECT */M_price FROM pricing_data 
+ORDER BY M_price DESC
+LIMIT 1 OFFSET 0;
+
+
 Determine the minimum M_Price for "USD" currency.
 Grouping and Sorting Queries
 Group records by Currency and calculate the sum of M_Price for each currency.
