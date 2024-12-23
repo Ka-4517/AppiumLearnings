@@ -55,19 +55,34 @@ Count the total number of records.
 --SELECT COUNT(*) from pricing_data;
 
 Find the maximum M_Price in the table.
---SELECT MAX(M_price) from pricing_data;
---SELECT */M_price FROM pricing_data 
+--SELECT MAX(M_price) from pricing_data; OR
+--SELECT * FROM pricing_data  [YOU CAN ALSO USE M_price in place of *]
 ORDER BY M_price DESC
 LIMIT 1 OFFSET 0;
 
 
 Determine the minimum M_Price for "USD" currency.
-Grouping and Sorting Queries
+--SELECT MIN(M_Price),Currency FROM `pricing_data` WHERE Currency='USD';
+
+Grouping and Sorting Queries:
 Group records by Currency and calculate the sum of M_Price for each currency.
+--SELECT SUM(M_Price),Currency FROM `pricing_data` GROUP BY Currency;
+
 Sort the table by Prc_date in ascending order.
+--SELECT * FROM pricing_data 
+ORDER BY Prc_date ASC;
+
 Sort the table by M_Price in descending order.
+--SELECT * FROM pricing_data 
+ORDER BY M_Price DESC;
+
 Fetch the top 3 records with the highest M_Price.
+--SELECT * FROM pricing_data 
+ORDER BY M_price DESC
+LIMIT 3 OFFSET 0;
+
 List records grouped by Pricing_factor and count them.
+--
 Join Queries (if there's another related table)
 If a related table has company names, join it to get full company names for Seq_id.
 Join with a currency exchange rate table to convert M_Price to another currency.
