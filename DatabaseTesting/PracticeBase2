@@ -17,14 +17,14 @@ Table 2
 Seq_id	| Company_Name	| Sector |	Country |
 HCL 	| HCL Technologies |	IT	India
 HDFC	| HDFC Bank	       | Banking	India
-HUL	    |  Hindustan Unilever	  FMCG	 USA
-ICC	    | International Corp	  Sports	UK
-INC	    | INC Pvt Ltd	    Finance	Singapore
+HUL	  |  Hindustan Unilever	  FMCG	 USA
+ICC	  | International Corp	  Sports	UK
+INC	  | INC Pvt Ltd	    Finance	Singapore
 INF 	| Infosys         	IT	India
-Mar	    |  Maruti Suzuki	   Automotive	Pakistan
-Ran	    | Ranbaxy	        Pharma	Switzerland
-TCS	    |  Tata Consultancy    	IT	USA
-WIP	    |  Wipro	              IT	Australia
+Mar	  |  Maruti Suzuki	   Automotive	Pakistan
+Ran	  | Ranbaxy	        Pharma	Switzerland
+TCS	  |  Tata Consultancy    	IT	USA
+WIP	  |  Wipro	              IT	Australia
 
 Practice Joins Only
 1. Retrieve all records by joining both tables:
@@ -37,3 +37,35 @@ SELECT pricing_data.M_Price , company_details.Company_Name , company_details.Sec
 FROM company_details
 JOIN pricing_data ON pricing_data.Seq_id = company_details.Seq_id
 WHERE company_details.Sector = 'IT';
+
+3. List all companies and their prices where the Pricing_factor is greater than 10?
+SELECT pricing_data.M_Price , company_details.Company_Name , pricing_data.Pricing_factor
+FROM company_details
+JOIN pricing_data ON pricing_data.Seq_id = company_details.Seq_id
+WHERE pricing_data.Pricing_factor > 10;
+
+4. Find the total M_Price grouped by country:
+SELECT SUM(pricing_data.M_Price) , company_details.Country
+FROM company_details
+JOIN pricing_data ON pricing_data.Seq_id = company_details.Seq_id
+GROUP BY company_details.Country;
+
+5. Fetch the list of companies where the currency is "INR" and country is "India":
+SELECT b.Company_Name, a.M_Price, a.Currency, b.Country
+FROM your_table a
+JOIN company_details b ON a.Seq_id = b.Seq_id
+WHERE a.Currency = 'INR' AND b.Country = 'India';
+
+6. Retrieve the top 3 most expensive companies in the IT sector?
+SELECT pricing_data.M_Price , company_details.Company_Name , company_details.Sector
+FROM company_details
+JOIN pricing_data ON pricing_data.Seq_id = company_details.Seq_id
+WHERE company_details.Sector = 'IT'
+ORDER BY pricing_data.M_Price DESC
+LIMIT 3 ;
+
+7. Find companies where Pricing_factor is greater than the average Pricing_factor?
+SELECT pricing_data.Pricing_factor , company_details.Company_Name 
+FROM company_details
+JOIN pricing_data ON pricing_data.Seq_id = company_details.Seq_id
+WHERE (SELECT AVG(pricing_data.Pricing_factor)FROM pricing_data) < pricing_data.Pricing_factor;
