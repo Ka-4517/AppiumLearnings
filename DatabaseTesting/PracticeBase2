@@ -1,21 +1,39 @@
-CREATE TABLE KARAN_RECORDS (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
-    email VARCHAR(100),
-    phone_number VARCHAR(15),
-    age INT,
-    city VARCHAR(50),
-    join_date DATE
-);
+Table 1
+| Seq_id | Prc_date   | M_Price | Currency | Pricing_factor |
+|--------|------------|---------|----------|----------------|
+| HCL    | 2013-07-17 | 487.39  | INR      | 1              |
+| HDFC   | 2013-07-05 | 1187.15 | INR      | 1              |
+| HUL    | 2013-03-23 | 109     | USD      | 100            |
+| ICC    | 2012-06-24 | 15      | GBP      | 50             |
+| INC    | 2011-01-10 | 15      | SGD      | 50             |
+| INF    | 2010-04-25 | 1257.39 | INR      | 3              |
+| Mar    | 2009-07-05 | 10      | PKR      | 7              |
+| Ran    | 2008-08-09 | 118     | CHF      | 80             |
+| TCS    | 2007-09-08 | 12      | USD      | 8              |
+| WIP    | 2010-10-05 | 234     | AUD      | 10             |
 
-INSERT INTO KARAN_RECORDS (first_name, last_name, email, phone_number, age, city, join_date)
-VALUES
-('Karan', 'Sharma', 'karan.sharma@example.com', '9876543210', 25, 'Mumbai', '2023-01-01'),
-('Amit', 'Gupta', 'amit.gupta@example.com', '9876543211', 30, 'Delhi', '2023-01-02'),
-('Riya', 'Mehta', 'riya.mehta@example.com', '9876543212', 28, 'Pune', '2023-01-03'),
-('Sneha', 'Patel', 'sneha.patel@example.com', '9876543213', 26, 'Ahmedabad', '2023-01-04'),
-('Rahul', 'Verma', 'rahul.verma@example.com', '9876543214', 35, 'Kolkata', '2023-01-05'),
-('Anjali', 'Singh', 'anjali.singh@example.com', '9876543215', 29, 'Bangalore', '2023-01-06');
+
+Table 2
+Seq_id	| Company_Name	| Sector |	Country |
+HCL 	| HCL Technologies |	IT	India
+HDFC	| HDFC Bank	       | Banking	India
+HUL	    |  Hindustan Unilever	  FMCG	 USA
+ICC	    | International Corp	  Sports	UK
+INC	    | INC Pvt Ltd	    Finance	Singapore
+INF 	| Infosys         	IT	India
+Mar	    |  Maruti Suzuki	   Automotive	Pakistan
+Ran	    | Ranbaxy	        Pharma	Switzerland
+TCS	    |  Tata Consultancy    	IT	USA
+WIP	    |  Wipro	              IT	Australia
 
 Practice Joins Only
+1. Retrieve all records by joining both tables:
+SELECT pricing_data.*, company_details.Company_Name, company_details.Sector, company_details.Country
+FROM pricing_data
+JOIN company_details ON pricing_data.Seq_id = company_details.Seq_id;
+
+2. Find all companies in the IT sector with their pricing details:
+SELECT pricing_data.M_Price , company_details.Company_Name , company_details.Sector
+FROM company_details
+JOIN pricing_data ON pricing_data.Seq_id = company_details.Seq_id
+WHERE company_details.Sector = 'IT';
